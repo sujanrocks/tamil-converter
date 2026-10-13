@@ -5,7 +5,14 @@
 export const VOWELS = { m:'அ', M:'ஆ', ',':'இ', '<':'ஈ', c:'உ', C:'ஊ', v:'எ', V:'ஏ', I:'ஐ', x:'ஒ', X:'ஓ' };
 export const CONSONANTS = { f:'க', q:'ங', r:'ச', Q:'ஞ', l:'ட', z:'ண', j:'த', e:'ந', g:'ப', k:'ம',
   a:'ய', u:'ர', y:'ல', t:'வ', o:'ழ', s:'ள', w:'ற', d:'ன', '[':'ஜ' };
-export const U_FORMS = { F:'கு', R:'சு', L:'டு', J:'து', G:'பு', K:'மு', U:'ரு' }; // letter-specific glyphs
+
+export const U_FORMS = {
+  F: 'கு', R: 'சு', L: 'டு', Z: 'ணு',
+  J: 'து', E: 'நு', G: 'பு', K: 'மு',
+  A: 'யு', U: 'ரு', Y: 'லு', T: 'வு',
+  O: 'ழு', S: 'ளு', W: 'று', D: 'னு'
+};
+ // letter-specific glyphs
 const POST = { h:'ா', p:'ி', P:'ீ', ';':'்' };
 const PRE = { n:'ெ', N:'ே', i:'ை' };            // typed BEFORE the consonant in Bamini
 export const PENDING = [
