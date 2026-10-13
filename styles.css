@@ -1,0 +1,20 @@
+:root{--g:#0b5d3b;--g2:#0e7a4d;--bg:#f4f8f5;--fg:#12261c;--card:#fff;--bd:#b9d3c4;--warn:#9a5b00}
+@media (prefers-color-scheme:dark){:root{--bg:#0d1a13;--fg:#e6f2ea;--card:#14271d;--bd:#2c4a39;--g:#1c8a5a;--g2:#27a56e;--warn:#ffc266}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 "Noto Sans Tamil","Nirmala UI","Latha","Tamil Sangam MN",system-ui,sans-serif;padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}
+header{background:var(--g);color:#fff;padding:18px 16px;text-align:center}
+h1{margin:0;font-size:1.8rem}header p{margin:2px 0 0;opacity:.9}
+main{max-width:900px;margin:0 auto;padding:12px 14px 32px}
+.tabs{display:flex;gap:8px;margin:8px 0}
+.tabs button{flex:1}.tabs [aria-selected=true]{background:var(--g);color:#fff;border-color:var(--g)}
+label{display:block;font-weight:600;margin:14px 0 4px}
+textarea{width:100%;font:inherit;font-size:1.1rem;padding:12px;border:1.5px solid var(--bd);border-radius:10px;background:var(--card);color:var(--fg);resize:vertical}
+textarea:focus,button:focus-visible{outline:3px solid var(--g2);outline-offset:1px}
+.count{text-align:right;font-size:.85rem;opacity:.75}
+.row{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
+button{min-height:48px;padding:0 16px;font:inherit;border:1.5px solid var(--g);border-radius:10px;background:var(--card);color:var(--fg);cursor:pointer;flex:1 1 140px}
+button.primary{background:var(--g);color:#fff}
+label.auto{display:flex;gap:8px;align-items:center;font-weight:400;margin:4px 0}
+#msg{min-height:1.5em;color:var(--warn);font-weight:600}
+details{margin-top:12px;font-size:.92rem}
+@media (min-width:800px){main{padding-top:24px}}

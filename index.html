@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ta">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>தமிழ் மாற்றி — Bamini ⇄ Unicode</title>
+<meta name="theme-color" content="#0b5d3b">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header><h1>தமிழ் மாற்றி</h1><p>Bamini ⇄ Unicode Tamil Converter</p></header>
+<main>
+  <div class="tabs" role="tablist" aria-label="Mode">
+    <button id="b2u" role="tab" aria-selected="true">Bamini → Unicode</button>
+    <button id="u2b" role="tab" aria-selected="false">Unicode → Bamini</button>
+  </div>
+  <label for="src" id="lblSrc">உள்ளீடு</label>
+  <textarea id="src" rows="8" spellcheck="false" autocomplete="off" autocapitalize="off"></textarea>
+  <div class="count" id="cntSrc" aria-live="polite">0</div>
+  <div class="row">
+    <button id="convert" class="primary">மாற்று / Convert</button>
+    <button id="paste">ஒட்டு / Paste</button>
+    <button id="swap">இடமாற்று / Swap</button>
+    <button id="clear">அழி / Clear All</button>
+  </div>
+  <label class="auto"><input type="checkbox" id="auto" checked> உடனடி மாற்றம் / Instant</label>
+  <label for="dst" id="lblDst">வெளியீடு</label>
+  <textarea id="dst" rows="8" readonly></textarea>
+  <div class="count" id="cntDst" aria-live="polite">0</div>
+  <div class="row">
+    <button id="copy" class="primary">நகலெடு / Copy Output</button>
+    <button id="selall">அனைத்தையும் தேர்வு செய் / Select All</button>
+  </div>
+  <p id="msg" role="status" aria-live="polite"></p>
+  <details><summary>வரம்புகள் / Limitations</summary>
+    <p>Bamini உரை லத்தீன் எழுத்துகளால் ஆனது; அதனால் ஆங்கிலச் சொற்களை Bamini திசையில் பிரித்தறிய முடியாது. ';' = புள்ளி (்), ',' = இ.</p>
+    <p>Some glyphs are not yet verified and are reported (not guessed). See README.</p>
+  </details>
+</main>
+<script type="module" src="script.js"></script>
+</body>
+</html>
